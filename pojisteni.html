@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="pojisteni.css" type="text/css">
+    <script defer src="js/scrollIndicator.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+   <article id="main-article">
+    <section id="first-view">
+        <section id="js-slide-nav">
+            <div id="nav-logo-wrap">
+            <div class="nav-logo">
+                    <img src="img/safety-60px.png" alt="companyLogo" id="icon" class="responsive-max">
+                    <a class="nav-logo-txt">Algone</a>
+                </div>
+                <div class="hamburger-icon-wrap">
+                    <a id="hamburger-icon" onclick="hamburgerSlide()">
+                        <img src="img/hamburger.png" style="height: 50px; width: 50px;">
+                    </a>
+                </div>
+            </div>
+
+        <div id="hamburger-nav">
+            <div class="nav-list-wrap">
+                <div class="nav-list">
+                    <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                    <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                    <a href="comingSoon.html" class="nav-txt-hover">Blog</a>
+                    <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                </div>
+            </div>
+
+            <div class="login">
+                <a class="nav-txt-hover">Přihlásit</a>
+                <a class="nav-txt-hover">Registrovat</a>
+            </div>
+            <div id="js-hamburger-links-slide" style="display: none;">
+                <div class="hamburger-links-wrap-slide">
+                    <a href="about.html">O&nbsp;aplikaci</a>
+                </div>
+                <div class="hamburger-links-wrap-slide">
+                    <a href="#table-wrap">Pojištěnci</a>
+                </div>
+                <div class="hamburger-links-wrap-slide">
+                    <a href="#inputs-wrap">Pojištění</a>
+                </div>
+                <div class="hamburger-links-wrap-slide">
+                    <a href="comingSoon.html">Blog</a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="header">
+                    <div class="nav-logo">
+                        <img src="img/safety-60px.png" alt="companyLogo" id="icon" class="responsive-max">
+                        <a class="nav-logo-txt">Algone</a>
+
+                        <div class="hamburger-icon-wrap">
+                            <a id="hamburger-icon" onclick="hamburger()">
+                                <img src="img/hamburger.png" style="height: 50px; width: 50px;">
+                            </a>
+                        </div>
+                    </div>
+
+                <div id="hamburger-nav">
+                    <div class="nav-list-wrap">
+                        <div class="nav-list">
+                            <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                            <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                            <a href="comingSoon.html" class="nav-txt-hover">Blog</a>
+                            <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                        </div>
+                    </div>
+    
+                    <div class="login">
+                        <a class="nav-txt-hover">Přihlásit</a>
+                        <a class="nav-txt-hover">Registrovat</a>
+                    </div>
+                    <div id="js-hamburger-links" style="display: none;">
+                        <div class="hamburger-links-wrap">
+                            <a href="about.html">O&nbsp;aplikaci</a>
+                        </div>
+                        <div class="hamburger-links-wrap">
+                            <a href="#table-wrap">Pojištěnci</a>
+                        </div>
+                        <div class="hamburger-links-wrap">
+                            <a href="#inputs-wrap">Pojištění</a>
+                        </div>
+                        <div class="hamburger-links-wrap">
+                            <a href="comingSoon.html">Blog</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="first-view-items">
+            <div id="first-view-p">
+                <h2>Bezpečí, jistota a bezstarostnost</h2>
+                <p>To je Algone. Jsme pojišťovací společnost poskytující naše služby už od roku 2007. Zaměřujeme se na pojištěí domácností a i zdravotním pojištěním. Se vším rádi pomůžeme a zařídíme vám pojištění takové jaké vám sedne. Stačí vyplnit údaje na naší stránce níže a můžeme začít!</p>
+            </div>
+            <div id="main-gif-wrap">
+                <div id="main-gif">
+                    <img src="img/gif-600px.gif" alt="insuranceGif" id="gif" class="responsive">
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <section id="sponsors">
+        <div>
+            <div id="sponsors-p" class="scroll-hidden">
+                <p>Důvěřují nám mezinárodní společnosti:</p>
+            </div>
+            <div id="companies">
+                <div class="company scroll-hidden">
+                    <img src="img/amazon-pay-100px.png" class="responsive-max">
+                </div>
+                <div class="company scroll-hidden">
+                    <img src="img/aecom-100px.png" class="responsive-max">
+                </div>
+                <div class="company scroll-hidden">
+                    <img src="img/samsung-100px.png" class="responsive-max">
+                </div>
+                <div class="company scroll-hidden">
+                    <img src="img/siemens-100px.png" class="responsive-max">
+                </div>
+                <div class="company scroll-hidden">
+                    <img src="img/zoom-100px.png" class="responsive-max">
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section id="company-info">
+        <div class="scroll-hidden">
+
+            <div id="company-info-wrap">
+                <div id="info-img-wrap">
+                    <div id="info-img">
+                        <div id="info-img-container">
+                            <img src="img/New_Canvas540" alt="companyLogoImage" id="info-image" class="responsive">
+                            <div class="overlay">
+                                <div id="info-img-txt">Hello World</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="company-info-txt">
+                    <h2>Co je to Algone?</h2>
+                    <p>Algone je společnost poskytující pojištění od roku 2007. Od našich začátků až do dnes se snažíme stále zlepšovat naše služby a spokojenost zákazníků je pro nás to nejdůležitější.</p>
+                    <div onclick="dropdownFunction(this)" class="box" style="height: 64px; transition: all 2s ease 0s;">
+                        <div class="dropdown">
+                                <img src="img/home-30px.png" alt="homeIcon" class="responsive-max">
+                                <p class="dropdown-p">Kde nás najdete?</p>
+                            <div class="dropdown-spans">
+                                <span class="left-icon"></span>
+                                <span class="right-icon"></span>
+                            </div>
+    
+                            <div class="drop-items">
+                                <a>Hlavní sídlo společnosti lze najít v Praze, na adrese Radovanova 3167/7, Smíchov. Místo kde si s námi můžete sjednat pojištění následně najdete i v každém krajském městě.</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="box2" onclick="dropdownFunction(this)" class="box" style="height: 64px; transition: all 2s ease 0s;">
+                        <div class="dropdown2">
+                                <img src="img/question-mark-30px.png" alt="questionMarkIcon" class="responsive-max">
+                                <p class="dropdown-p">Jak začít?</p>
+                            <div class="dropdown-spans">
+                                <span class="left-icon"></span>
+                                <span class="right-icon"></span>
+                            </div>
+        
+                            <div class="drop-items">
+                                <a>Nejdříve od vás budeme potřebovat pár osobních údajů, ty můžete vyplnit v sekci "pojištění". Následně vás budeme kontakovat ohledně dalšího postupu.</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box3" onclick="dropdownFunction(this)" class="box" style="height: 64px; transition: all 2s ease 0s;">
+                        <div class="dropdown3">
+                                <img src="img/pen-tool-30px.png" alt="penIcon" class="responsiveMax">
+                                <p class="dropdown-p">Co potřebuji?</p>
+                            <div class="dropdown-spans">
+                                <span class="left-icon"></span>
+                                <span class="right-icon"></span>
+                            </div>
+                        
+                            <div class="drop-items">
+                                <a>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+    </section>
+
+    <section id="table-wrap">
+        <div class="scroll-hidden">
+
+            <div id="table-users-txt">
+                <h2>Pojištěnci</h2>
+                <p>Zde můžete spravovat své členství i vaše existující pojištění. Stačí pár kliknutí a můžete změnit nebo zrušit své stávající pojištění. V případě jakých koliv otázek nás neváhejte kontaktovat.</p>
+            </div>
+    
+            <div id="table-back">
+                <div id="insured-list">
+                    <table id="insured-table">
+                        <tr>
+                            <th>Jméno</th>
+                            <th>Telefon</th>
+                            <th class="td-age">Věk</th>
+                            <th class="last-td"></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="inputs-wrap">
+        <div class="scroll-hidden">
+
+            <div id="inputs-txt">
+                <h2>Nový Pojištěnec</h2>
+                <p>Stačí pouze pár kliknutí a můžete se i vy stát naším pojištěncem. Stačí zadat základní informace do kolonek níže a je to! O zbytek se postaráme už za vás a brzy vás budeme kontaktovat.</p>
+            </div>
+    
+            <div id="input-items">
+                    <div id="avatar-wrap">
+                        <div id="inputs-avatar">
+                            <img src="img/avatar-140px.png" class="avatar responsive-max" alt="profilePicture">
+                        </div>
+                    </div>
+        
+                    <div id="new-insured">
+                        <form method="post">
+                            <div id="inputs-left-div">
+                                <div class="inputs-flex-wrap">
+                                    <div class="label-flex-wrap">  
+                                        <label for="fname" class="input-title-name">Jméno</label><label for="fname" class="error"></label><br>
+                                    </div>
+                                    <input type="text" id="fname" name="fname" placeholder="Jan">
+                                </div>
+                                <div class="inputs-flex-wrap-surename">
+                                    <div class="label-flex-wrap-surename">
+                                        <label for="fsurename" class="input-title-surename">Přijmení</label><label for="fsurename" class="error2"></label><br>
+                                    </div>
+                                    <input type="text" id="fsurename" name="fsurename" placeholder="Novák"><br>
+                                </div> 
+                            </div>    
+                            <div id="inputs-right-div">    
+                                <div class="inputs-flex-wrap">
+                                    <div class="label-flex-wrap">
+                                        <label for="fage" class="input-title-age">Věk</label><label for="fage" class="error1"></label><br> 
+                                    </div>
+                                    <input type="number" id="fage" name="fage" placeholder="35" min="18" max="100">
+                                </div>
+                                <div class="inputs-flex-wrap">
+                                    <div class="label-flex-wrap">
+                                        <label for="ftel" class="input-title-tel">Telefoní číslo</label><label for="ftel" class="error3"></label><br>
+                                    </div>
+                                    <input type="tel" id="ftel" name="ftel" placeholder="777 444 555">
+                                </div>
+                            </div>  
+                            <button type="submit" id="save-btn" value="Uložit">Uložit</button>
+                        </form>   
+                    </div>
+                
+    
+                <div class="counter">
+                    <div id="counter-polaroid">
+                            <img src="img/counter.png" alt="insuranceDesign" width="100%">
+                        <div id="counter-container">
+                            <p>Celkem jsme již pojistili <span id="insured-count"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services-wrap">
+        <div id="services-title" class="scroll-hidden">
+            <h2>Co vše nabízíme?</h2>
+          </div>
+
+        <div id="services">
+
+                <div id="timeline-box">
+                        <div id="timeline-left">
+                            <div class="timeline-left-section scroll-hidden">
+                                <h2>Pojištění domácnosti</h2>
+                                <p>Potřebujete pojistit vaši domácnost před přírodními katastrofami, před vyhořením nebo jinýma nepředvídatelnýma událostma? V tom případě vám radi pomůžeme!</p>
+                            </div>
+    
+                            <div class="timeline-left-section scroll-hidden">
+                                <img src="img/timeline2.png" alt="insuranceDesign" class="timeline-img-left responsive"> 
+                            </div>
+    
+                            <div class="timeline-left-section scroll-hidden" id="timeline-left-order-2">
+                                <h2>Povinné ručení</h2>
+                                <p>Hledáte povinné ručení rychle, levně a jednoduše? I to je jedna z nabídek co pro vás máme! Vaše auto pojistíme za nejvýhodnější cenu na trhu!</p>
+                            </div>
+    
+                            <div class="timeline-left-section scroll-hidden">
+                                <img src="img/timeline3.png" alt="insuranceDesign" class="timeline-img-left responsive"> 
+                            </div>
+                        </div>
+    
+                        <div id="timeline-line-wrap">
+                        <div class="js-timeline">
+    
+                                <div class="js-timeline-line">
+                                    <div class="js-timeline-line-progress"></div>
+                                </div>
+    
+                            <div class="timeline-mid">
+                                <div class="js-timeline-section">
+                                    <div class="circle-box">
+                                        <div class="js-circle-wrap">
+                                            <div class="circle"><span class="inner-circle"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+              
+                                <div class="js-timeline-section">
+                                    <div class="circle-box">
+                                        <div class="js-circle-wrap">
+                                            <div class="circle"><span class="inner-circle"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+              
+                                <div class="js-timeline-section">
+                                    <div class="circle-box">
+                                        <div class="js-circle-wrap">
+                                            <div class="circle"><span class="inner-circle"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+              
+                                <div class="js-timeline-section">
+                                    <div class="circle-box">
+                                        <div class="js-circle-wrap">
+                                            <div class="circle"><span class="inner-circle"></span></div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+    
+                        </div>
+                        </div>
+
+                    <div id="timeline-right">
+                        <div class="timeline-right-section scroll-hidden" id="timeline-right-order-1">
+                            <img src="img/timeline1-300px.png" alt="insuranceDesign" class="timeline-img-right responsive">
+                        </div>
+
+                        <div class="timeline-right-section scroll-hidden" id="timeline-right-order-2">
+                             <h2>Zdravotní pojištění</h2>
+                             <p>Hledáte zdravotní pojištění kde se nemusíte nikdy bát že by se vám pomoci nedostalo? Naše zdravotní pojištění je tu pro vás a připraveno vám kdykoliv pomoct</p>
+                        </div>
+
+                        <div class="timeline-right-section scroll-hidden" id="timeline-right-order-3">
+                            <img src="img/timeline4-300px.png" alt="insuranceDesign" class="timeline-img-right responsive">
+                        </div>
+
+                        <div class="timeline-right-section scroll-hidden" id="timeline-right-order-4">
+                            <h2>Příspěvky na léčbu</h2>
+                            <p>Drahé léky a nebo ošetření u lékaře? Není problém! Rádi vám uhradíme plnou výši za ošetření i třeba u zubaře, stačí donést potvrzení o transakci a o zbytek se postaráme</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <section id="testimonials-wrap">
+        <div id="testimonials-hidden" class="scroll-hidden">
+
+            <div id="testimonials-main-txt">
+                <h2>Máme spoustu spokojených klientů</h2>
+            </div>
+    
+            <div id="testimonials">
+                <div id="testimonials-first-line">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-avatar">
+                                <img src="img/testimonial2-60px.png" alt="TestimonialAvatar" class="testimonial-img responsive-max">
+                            <div class="testimonial-avatar-txt">
+                                <h3>Chris Fox</h3>
+                                <p>CEO at Mighty Schools</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-txt">
+                            <h3>"Nejrychlejší pojištění"</h3>
+                            <p>Potřeboval jsem rychle sjednat pojištění před cestou do zahraničí. S Algone nebyl žádný problém a mohlem jsem odlétat bez strachu co by mohlo být.</p>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-avatar">
+                                <img src="img/testimonials1-60px.png" alt="TestimonialAvatar" class="testimonial-img responsive-max">
+                            <div class="testimonial-avatar-txt">
+                                <h3>Jane Doe</h3>
+                                <p>HR of IT Stub Hub</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-txt">
+                            <h3>"Spousta výhod pro všechny"</h3>
+                            <p>U Algone máme pojištěnou domácnost již několik let. Za věrnost jsme dokonce dostali i výhodné balíčky pro celou rodinu.</p>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-avatar">
+                                <img src="img/testimonial3-60px.png" alt="TestimonialAvatar" class="testimonial-img responsive-max">
+                            <div class="testimonial-avatar-txt">
+                                <h3>John Doe</h3>
+                                <p>PM, Hendrick Auto</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-txt">
+                            <h3>"Nejlepší zkušenost"</h3>
+                            <p>Za život jsem již vystřídal mnoho pojišťovacích služeb, ale žádná nebyla jako Algone. Rychlost, profesionalita, přehlednost a ochota mě přesvědčila že už jiné pojištění nebudu potřebovat.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="testimonials-second-line">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-avatar">
+                                <img src="img/testimonial5-60px.png" alt="TestimonialAvatar" class="testimonial-img responsive-max">
+                            <div class="testimonial-avatar-txt">
+                                <h3>Rachel Poppins</h3>
+                                <p>Head of SEO Upsere</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-txt">
+                            <h3>"Ochota pomoct"</h3>
+                            <p>Před pár lety jsem řešila problém s vyhořením, bála jsem se že mi pojišťovna neuhradí veškeré ztráty. Byla jsem neuvěřitelně překvapena z ochoty které se mi u Algone dostalo.</p>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-avatar">
+                                <img src="img/testimonial6-60px.png" alt="TestimonialAvatar" class="testimonial-img responsive-max">
+                            <div class="testimonial-avatar-txt">
+                                <h3>Teylor Swift</h3>
+                                <p>IT Manager Hendrick Auto</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-txt">
+                            <h3>"Výhodné pro všechny"</h3>
+                            <p>U Algone si vybere opravdu každý, ať už hledáte pojištění celé domácnosti včetně rodinných příslušníků nebo pouze pojištění na cesty.</p>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-avatar">
+                                <img src="img/testimonial4-60px.png" alt="TestimonialAvatar" class="testimonial-img responsive-max">
+                            <div class="testimonial-avatar-txt">
+                                <h3>William Riker</h3>
+                                <p>CTO, Hendrick Auto</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-txt">
+                            <h3>"Jednoduché na sjednání"</h3>
+                            <p>V Algone vás nezahltí kopou papírů které máte podepsat a ve kterých se pomalu nejde ani vyznat, vše je přehledné, jednoduché a pokud máte jaký koliv dotaz, rádi poradí.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="end-txt">
+        <div id="end-txt-wrap" class="scroll-hidden">
+            <div id="end-txt-border">
+                <div id="end-txt-left">
+                    <div id="end-txt-title">
+                        <h2>Zařiďtě si pojištění</h2>
+                        <h2>ještě dnes</h2>
+                    </div>
+
+                    <div id="end-txt-items-wrap">
+                        <span class="end-txt-items"><img src="img/accept-15px.png" alt="checkMark" class="responsive-max"><p>Rychlý a jednoduchý</p></span>
+                        <span class="end-txt-items"><img src="img/accept-15px.png" alt="checkMark" class="responsive-max"><p>Jistota a bezpečí</p></span>
+                        <span class="end-txt-items"><img src="img/accept-15px.png" alt="checkMark" class="responsive-max"><p>Dostupný</p></span>
+                    </div>
+
+                    <div id="end-txt-buttons">
+
+                    </div>
+                </div>
+
+                <div id="end-txt-right">
+                    <img src="img/endTxt-450px.png" alt="designInsurance" id="end-txt-img" class="responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-wrap">
+        <footer>
+            <div id="footer-items">
+                <div id="footer-nav-wrap">
+                    <div class="footer-nav-logo">
+                        <img src="img/safety-60px.png" alt="companyLogo" id="icon" class="responsiveMax">
+                        <a href="#first-view" class="nav-logo-txt">Algone</a>
+                    </div>
+
+                    <div id="footer-mid">
+                        <div id="footer-nav">
+                            <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                            <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                            <a class="nav-txt-hover">Podmínky použití</a>
+                            <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                        </div>
+                    </div>
+
+                    <div class="login">
+                        <a class="nav-txt-hover">Přihlásit</a>
+                        <a class="nav-txt-hover">Registrovat</a>
+                    </div>
+                </div>
+
+                <div id="socials-wrap">
+                    <div id="socials-txt">
+                        <p>Bezpečí, jistota a bezstarostnost.</p>
+                        <p>To všechno u Algone</p>
+                    </div>
+
+                    <div id="socials-icons-wrap">
+                        <div id="social-icons">
+                            <div class="icons-border">
+                                <img src="img/twitter50px.png" alt="twitterLogo" id="twitter" class="responsive">
+                            </div>
+                            <div class="icons-border">
+                                <img src="img/instagram50px.png" alt="instagramLogo" id="instagram" class="responsive">
+                            </div>
+                            <div class="icons-border">   
+                                <img src="img/youtube50px.png" alt="youtubeLogo" id="youtube" class="responsive">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="socials-rights">
+                        <p>© 2023, Všechna práva vymezena</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Místo pro scripty -->
+    <script src="js/pojisteniNEW.js"></script>
+    <script src="js/Zaznam.js"></script>
+    <script src="js/dataValidation.js"></script>
+    <script src="js/slideNav.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/userCount.js"></script>
+    <script src="js/hamburegerMenu.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/obsluha.js"></script>
+    
+    
+   </article>
+   
+</body>
+
+</html>
+

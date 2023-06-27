@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="pojisteni.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <section class="header">
+            <div class="nav-logo">
+                <img src="img/safety-60px.png" alt="companyLogo" id="icon" class="responsive-max">
+                <a href="pojisteni.html" class="nav-logo-txt">Algone</a>
+
+                <div class="hamburger-icon-wrap">
+                    <a id="hamburger-icon" onclick="hamburgerSlide()">
+                        <img src="img/hamburger.png" style="height: 50px; width: 50px;" class="responsive-max">
+                    </a>
+                </div>
+            </div>
+
+        <div id="hamburger-nav">
+            <div class="nav-list-wrap">
+                <div class="nav-list">
+                    <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                    <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                    <a href="comingSoon.html" class="nav-txt-hover">Blog</a>
+                    <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                </div>
+            </div>
+
+            <div class="login">
+                <a class="nav-txt-hover">Přihlásit</a>
+                <a class="nav-txt-hover">Registrovat</a>
+            </div>
+            <div id="js-hamburger-links-slide" style="display: none;">
+                <div class="hamburger-links-wrap-about">
+                    <a href="about.html">O&nbsp;aplikaci</a>
+                </div>
+                <div class="hamburger-links-wrap-about">
+                    <a href="#table-wrap">Pojištěnci</a>
+                </div>
+                <div class="hamburger-links-wrap-about">
+                    <a href="#inputs-wrap">Pojištění</a>
+                </div>
+                <div class="hamburger-links-wrap-about">
+                    <a href="comingSoon.html">Blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-items">
+        <div id="about-items-txt">
+            <h2>Vlastnosti aplikace</h2>
+            <p>Aplikace je vytvořena v HTML 5 a stylovaná za pomocí CSS 3. Pro vytvoření funkcionalit stránky byl použit javascript a pro zjednodušení určitých částí Jquery. Stránka je responsivní jak pro desktop tak pro mobily. Více informací naleznete níže.</p>
+
+        </div>
+        <div id="about-items-wrap">
+            <div id="about-items-up">
+                <div id="html">
+                    <div class="about-items-up-img">
+                        <img src="img/html-5-50px.png" alt="htmlIcon" class="responsive-max">
+                        <h2>HTML 5</h2>
+                    </div>
+                    <div class="about-items-down-txt">
+                        <p>Kostra projektu napsána ve značkovacím jazyce HTML</p>
+                    </div>
+                </div>
+                <div id="css">
+                    <div class="about-items-up-img">
+                        <img src="img/css-3-50px.png" alt="cssIcon" class="responsive-max">
+                        <h2>CSS 3</h2>
+                    </div>
+                    <div class="about-items-down-txt">
+                        <p>Veškeré stylování vytvořené pomocí CSS</p>
+                        <p>Některé animace dělané pomocí CSS</p>
+                    </div>
+                </div>
+                <div id="responsive">
+                    <div class="about-items-up-img">
+                        <img src="img/responsive-50px.png" alt="responsivityIcon" class="responsive-max">
+                        <h2>Responsivita</h2>
+                    </div>
+                    <div class="about-items-down-txt">
+                        <p>Stránka plně responsivní pro všechna zařízení</p>
+                        <p>Použity dva breakpointy: 1024px a 480px</p>
+                        <p>Upraven vzhled pro mobilní a menší desktopová zařízení</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-items-down">
+                <div id="javascript">
+                    <div class="about-items-up-img">
+                        <img src="img/javascript-50px.png" alt="jsIcon" class="responsive-max">
+                        <h2>Javascript</h2>
+                    </div>
+                    <div class="about-items-down-txt">
+                        <p>Většina funkcí stránky implementovaná pomocí vanilla Javascriptu</p>
+                        <p>Použita observer knihovna pro scroll animace</p>
+                    </div>
+                </div>
+                <div id="jquery">
+                    <div class="about-items-up-img">
+                        <img src="img/jquery-logo-50px.png" alt="JqueryIcon" class="responsive-max">
+                        <h2>Jquery</h2>
+                    </div>
+                    <div class="about-items-down-txt">
+                        <p>Timeline implementovaná pomocí Jquery</p>
+                        <p>Část data validation napsaná pomocí Jquery</p>
+                        <p>Některé další části kodu zjednodušené pomocí Jquery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-wrap">
+        <footer>
+            <div id="footer-items">
+                <div id="footer-nav-wrap">
+                    <div class="nav-logo">
+                        <img src="img/safety-60px.png" alt="companyLogo" id="icon" class="responsive-max">
+                        <a href="pojisteni.html" class="nav-logo-txt">Algone</a>
+                    </div>
+
+                    <div id="footer-mid">
+                        <div id="footer-nav">
+                            <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                            <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                            <a class="nav-txt-hover">Podmínky použití</a>
+                            <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                        </div>
+                    </div>
+
+                    <div class="login">
+                        <a class="nav-txt-hover">Přihlásit</a>
+                        <a class="nav-txt-hover">Registrovat</a>
+                    </div>
+                </div>
+
+                <div id="socials-wrap">
+                    <div id="socials-txt">
+                        <p>Bezpečí, jistota a bezstarostnost.</p>
+                        <p>To všechno u Algone</p>
+                    </div>
+
+                    <div id="socials-icons-wrap">
+                        <div id="social-icons">
+                            <div class="icons-border">
+                                <img src="img/twitter50px.png" alt="twitterLogo" id="twitter" class="responsive">
+                            </div>
+                            <div class="icons-border">
+                                <img src="img/instagram50px.png" alt="instagramLogo" id="instagram" class="responsive">
+                            </div>
+                            <div class="icons-border">   
+                                <img src="img/youtube50px.png" alt="youtubeLogo" id="youtube" class="responsive">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="socials-rights">
+                        <p>© 2023, Všechna práva vymezena</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </article>
+
+    <script src="js/hamburegerMenu.js"></script>
+
+</body>
+</html>
