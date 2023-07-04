@@ -16,7 +16,7 @@
                 <a href="pojisteni.html" class="nav-logo-txt">Algone</a>
 
                 <div class="hamburger-icon-wrap">
-                    <a id="hamburger-icon" onclick="hamburgerSlide()">
+                    <a id="hamburger-icon" onclick="hamburger()">
                         <img src="img/hamburger.png" style="height: 50px; width: 50px;" class="responsive-max">
                     </a>
                 </div>
@@ -32,22 +32,24 @@
                 </div>
             </div>
 
-            <div class="login">
+            <div class="nav-login">
                 <a class="nav-txt-hover">Přihlásit</a>
                 <a class="nav-txt-hover">Registrovat</a>
             </div>
-            <div id="js-hamburger-links-slide" style="display: none;">
-                <div class="hamburger-links-wrap-about">
-                    <a href="about.html">O&nbsp;aplikaci</a>
-                </div>
-                <div class="hamburger-links-wrap-about">
-                    <a href="#table-wrap">Pojištěnci</a>
-                </div>
-                <div class="hamburger-links-wrap-about">
-                    <a href="#inputs-wrap">Pojištění</a>
-                </div>
-                <div class="hamburger-links-wrap-about">
-                    <a href="comingSoon.html">Blog</a>
+            <div id="js-hamburger">
+                <div id="hamburger-links">
+                    <div class="hamburger-links-wrap">
+                        <a href="about.html">O&nbsp;aplikaci</a>
+                    </div>
+                    <div class="hamburger-links-wrap">
+                        <a href="#table-wrap">Pojištěnci</a>
+                    </div>
+                    <div class="hamburger-links-wrap">
+                        <a href="#inputs-wrap">Pojištění</a>
+                    </div>
+                    <div class="hamburger-links-wrap">
+                        <a href="comingSoon.html">Blog</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="login">
+                    <div class="nav-login">
                         <a class="nav-txt-hover">Přihlásit</a>
                         <a class="nav-txt-hover">Registrovat</a>
                     </div>
@@ -173,6 +175,7 @@
     </article>
 
     <script src="js/hamburegerMenu.js"></script>
+    <script src="js/slideNav.js"></script>
 
 </body>
 </html>

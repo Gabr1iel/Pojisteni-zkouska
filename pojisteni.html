@@ -13,11 +13,12 @@
 <body>
    <article id="main-article">
     <section id="first-view">
+
         <section id="js-slide-nav">
             <div id="nav-logo-wrap">
             <div class="nav-logo">
                     <img src="img/safety-60px.png" alt="companyLogo" id="icon" class="responsive-max">
-                    <a class="nav-logo-txt">Algone</a>
+                    <a class="nav-logo-txt" href="#first-view">Algone</a>
                 </div>
                 <div class="hamburger-icon-wrap">
                     <a id="hamburger-icon" onclick="hamburgerSlide()">
@@ -36,22 +37,27 @@
                 </div>
             </div>
 
-            <div class="login">
-                <a class="nav-txt-hover">Přihlásit</a>
-                <a class="nav-txt-hover">Registrovat</a>
+            <div class="nav-login">
+                <a class="nav-txt-hover js-login-btn" onclick="popupAppear()">Přihlásit</a>
+                <a class="nav-txt-hover" onclick="popupRegisterAppear()">Registrovat</a>
             </div>
-            <div id="js-hamburger-links-slide" style="display: none;">
-                <div class="hamburger-links-wrap-slide">
-                    <a href="about.html">O&nbsp;aplikaci</a>
-                </div>
-                <div class="hamburger-links-wrap-slide">
-                    <a href="#table-wrap">Pojištěnci</a>
-                </div>
-                <div class="hamburger-links-wrap-slide">
-                    <a href="#inputs-wrap">Pojištění</a>
-                </div>
-                <div class="hamburger-links-wrap-slide">
-                    <a href="comingSoon.html">Blog</a>
+            <div id="js-slide-hamburger">
+                <div id="hamburger-links">
+                    <div class="hamburger-links-wrap-slide">
+                        <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                    </div>
+                    <div class="hamburger-links-wrap-slide">
+                        <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                    </div>
+                    <div class="hamburger-links-wrap-slide">
+                        <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                    </div>
+                    <div class="hamburger-links-wrap-slide">
+                        <a href="comingSoon.html" class="nav-txt-hover">Blog</a>
+                    </div>
+                    <div class="hamburger-links-wrap">
+                        <a class="nav-txt-hover js-login-btn" onclick="popupAppear()">Přihlásit</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,28 +85,33 @@
                         </div>
                     </div>
     
-                    <div class="login">
-                        <a class="nav-txt-hover">Přihlásit</a>
-                        <a class="nav-txt-hover">Registrovat</a>
+                    <div class="nav-login">
+                        <a class="nav-txt-hover js-login-btn" onclick="popupAppear()">Přihlásit</a>
+                        <a class="nav-txt-hover" onclick="popupRegisterAppear()">Registrovat</a>
                     </div>
-                    <div id="js-hamburger-links" style="display: none;">
-                        <div class="hamburger-links-wrap">
-                            <a href="about.html">O&nbsp;aplikaci</a>
-                        </div>
-                        <div class="hamburger-links-wrap">
-                            <a href="#table-wrap">Pojištěnci</a>
-                        </div>
-                        <div class="hamburger-links-wrap">
-                            <a href="#inputs-wrap">Pojištění</a>
-                        </div>
-                        <div class="hamburger-links-wrap">
-                            <a href="comingSoon.html">Blog</a>
+                    <div id="js-hamburger">
+                        <div id="hamburger-links">
+                            <div class="hamburger-links-wrap">
+                                <a href="about.html" class="nav-txt-hover">O&nbsp;aplikaci</a>
+                            </div>
+                            <div class="hamburger-links-wrap">
+                                <a href="#table-wrap" class="nav-txt-hover">Pojištěnci</a>
+                            </div>
+                            <div class="hamburger-links-wrap">
+                                <a href="#inputs-wrap" class="nav-txt-hover">Pojištění</a>
+                            </div>
+                            <div class="hamburger-links-wrap">
+                                <a href="comingSoon.html" class="nav-txt-hover">Blog</a>
+                            </div>
+                            <div class="hamburger-links-wrap">
+                                <a class="nav-txt-hover js-login-btn" onclick="popupAppear()">Přihlásit</a>
+                            </div>
                         </div>
                     </div>
                 </div>
         </section>
 
-        <section id="first-view-items">
+        <div id="first-view-items">
             <div id="first-view-p">
                 <h2>Bezpečí, jistota a bezstarostnost</h2>
                 <p>To je Algone. Jsme pojišťovací společnost poskytující naše služby už od roku 2007. Zaměřujeme se na pojištěí domácností a i zdravotním pojištěním. Se vším rádi pomůžeme a zařídíme vám pojištění takové jaké vám sedne. Stačí vyplnit údaje na naší stránce níže a můžeme začít!</p>
@@ -111,7 +122,70 @@
                 </div>
             </div>
 
-        </section>
+        </div>
+
+
+        <div class="login-box-wrap">
+            <div class="login-wrap">
+                
+                <div class="form-box popup-login">
+                    <span class="icon-close" onclick="popupRemove()"><ion-icon name="close"></ion-icon></span>
+                    <h2>Přihlášení</h2>
+                    <form action="#" id="login-form">
+                        <div class="input-box">
+                            <span class="login-icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>     
+                        </div>
+                        <div class="input-box">
+                            <span class="login-icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Heslo</label>     
+                        </div>
+                        <div class="remember-forget">
+                            <label><input type="checkbox">Pamatovat si údaje</label>
+                            <a href="#" class="nav-txt-hover">Zapomenuté heslo?</a>
+                        </div>
+                            <button type="submit" class="login-btn">Přihlásit</button>
+                        <div class="login-register">
+                            <p>Nemáš založený účet? <a href="#" class="register-link nav-txt-hover" onclick="loginLink()">Zaregistruj&nbsp;se</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <span class="icon-close" onclick="popupRegisterRemove()"><ion-icon name="close"></ion-icon></span>
+                    <h2>Registrace</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="login-icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" required>
+                            <label>Uživatelské jméno</label>     
+                        </div>
+                        <div class="input-box">
+                            <span class="login-icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>     
+                        </div>
+                        <div class="input-box">
+                            <span class="login-icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Heslo</label>     
+                        </div>
+                        <div class="remember-forget">
+                            <label><input type="checkbox">Souhlasím s podmínkami užití</label>
+                        </div>
+                            <button type="submit" class="login-btn">Zaregistrovat</button>
+                        <div class="login-register">
+                            <p>Už máš založený účet?&nbsp;<a href="#" class="login-link nav-txt-hover" onclick="registerLink()">Přihlaš se</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
     </section>
 
     <section id="sponsors">
@@ -310,7 +384,7 @@
                             </div>
     
                             <div class="timeline-left-section scroll-hidden">
-                                <img src="img/timeline2.png" alt="insuranceDesign" class="timeline-img-left responsive"> 
+                                <img src="img/timeline2.png" srcset="img/timeline1-300px.png 1024w" alt="insuranceDesign" class="timeline-img-left responsive"> 
                             </div>
     
                             <div class="timeline-left-section scroll-hidden" id="timeline-left-order-2">
@@ -319,7 +393,7 @@
                             </div>
     
                             <div class="timeline-left-section scroll-hidden">
-                                <img src="img/timeline3.png" alt="insuranceDesign" class="timeline-img-left responsive"> 
+                                <img src="img/timeline3.png" srcset="img/timeline4-300px.png 1024w" alt="insuranceDesign" class="timeline-img-left responsive"> 
                             </div>
                         </div>
     
@@ -369,7 +443,7 @@
 
                     <div id="timeline-right">
                         <div class="timeline-right-section scroll-hidden" id="timeline-right-order-1">
-                            <img src="img/timeline1-300px.png" alt="insuranceDesign" class="timeline-img-right responsive">
+                            <img src="img/timeline1-300px.png" srcset="img/timeline2.png 1024w" alt="insuranceDesign" class="timeline-img-right responsive">
                         </div>
 
                         <div class="timeline-right-section scroll-hidden" id="timeline-right-order-2">
@@ -378,7 +452,7 @@
                         </div>
 
                         <div class="timeline-right-section scroll-hidden" id="timeline-right-order-3">
-                            <img src="img/timeline4-300px.png" alt="insuranceDesign" class="timeline-img-right responsive">
+                            <img src="img/timeline4-300px.png" srcset="img/timeline3.png 1024w" alt="insuranceDesign" class="timeline-img-right responsive">
                         </div>
 
                         <div class="timeline-right-section scroll-hidden" id="timeline-right-order-4">
@@ -536,9 +610,9 @@
                         </div>
                     </div>
 
-                    <div class="login">
-                        <a class="nav-txt-hover">Přihlásit</a>
-                        <a class="nav-txt-hover">Registrovat</a>
+                    <div class="nav-login">
+                        <a class="nav-txt-hover" onclick="popupAppear()">Přihlásit</a>
+                        <a class="nav-txt-hover" onclick="popupRegisterAppear()">Registrovat</a>
                     </div>
                 </div>
 
@@ -571,10 +645,14 @@
     </section>
 
     <!-- Místo pro scripty -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <script src="js/pojisteniNEW.js"></script>
     <script src="js/Zaznam.js"></script>
     <script src="js/dataValidation.js"></script>
     <script src="js/slideNav.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/userCount.js"></script>
     <script src="js/hamburegerMenu.js"></script>
